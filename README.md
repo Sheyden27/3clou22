@@ -3,6 +3,7 @@
 
 ```
 (local)$ ./pushscript ip_instance deploy-app
+(local)$ ./pushscript ip_instance index.php
 (local)$ ./go ip_instance
 (distant instance)# ./deploy-app
 ```
