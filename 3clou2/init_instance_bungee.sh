@@ -40,8 +40,26 @@ wget https://www.dropbox.com/s/c6492uqwnlrebfl/config.yml?dl=1
 rm config.yml
 mv 'config.yml?dl=1' config.yml
 
+n=1
+servname=""
+scw-userdata | grep srv | cut -d "=" -f2 | while read -r line ;
+do echo $line;
+if (($n % 2 != 0))
+then
+servname=`scw-userdata $line`
+echo "  $servname:"  >> minecraft_bungee/config.yml;
+fi
+if (($n % 2 == 0))
+then
+echo "    address:" | tr "\n" " " >> minecraft_bungee/config.yml;
+scw-userdata $line >> minecraft_bungee/config.yml;
+fi
+n=$((n+1));
+done
 
 tmux new -d -s bungee_minecraft
 tmux send-keys -t bungee_minecraft "java -Xms1G -Xmx2G -jar BungeeCord.jar" ENTER
 
 touch /root/initend
+
+

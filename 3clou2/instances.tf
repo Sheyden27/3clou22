@@ -31,7 +31,8 @@ resource "scaleway_instance_server" "bungee" {
   user_data = {
     name        = "initscript"
     cloud-init = file("${path.module}/init_instance_bungee.sh")
-    "srvmine1" = "${scaleway_instance_server.srvmine1.public_ip}"
+    "srvmine1-name" = "${scaleway_instance_server.srvmine1.name}"
+    "srvmine1-ip" = "${scaleway_instance_server.srvmine1.public_ip}"
   }
 
   depends_on = [ scaleway_instance_server.srvmine1 ]
@@ -48,7 +49,7 @@ resource "scaleway_instance_server" "srvmine1" {
 
   tags = ["front", "web"]
 
-  ip_id = scaleway_instance_ip.public_ip1.id
+  ip_id = scaleway_instance_ip.public_ip2.id
 
   #additional_volume_ids = [scaleway_instance_volume.data.id]
 
@@ -71,10 +72,10 @@ resource "scaleway_instance_server" "srvmine1" {
 }
 
 
-output "bungee" {
+output "bungee-ip" {
   value = "${scaleway_instance_server.bungee.public_ip}"
 }
 
-output "srvmine1" {
+output "srvmine1-ip" {
   value = "${scaleway_instance_server.srvmine1.public_ip}"
 }
