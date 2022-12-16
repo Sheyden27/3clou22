@@ -17,7 +17,7 @@ A la suite de cette dernière commande, vous pourrez voir l'ip de votre Bungee e
 
 ## Attendre ensuite le déploiement du Bungee et des serveurs associés
 
-Pour monitorer ce qui a été créé :
+Pour monitorer ce qui a été créé (OPTIONNEL) :
 ```
 (local)$ ./go bungee-ip
 ou (local)$ ./go srvmine1
