@@ -11,7 +11,7 @@ Executer les commandes suivantes:
 (local)$ make init
 (local)$ make apply
 ```
-### A la suite de cette dernière commande, vous pourrez voir l'ip de votre Bungee et de vos serveurs minecraft,
+A la suite de cette dernière commande, vous pourrez voir l'ip de votre Bungee et de vos serveurs minecraft,
 ### Notez bien **l'ip du Bungee** pour plus tard vous y connecter
 
 ## Attendre ensuite le déploiement du Bungee et des serveurs associés
