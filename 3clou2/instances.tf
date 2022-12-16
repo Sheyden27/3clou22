@@ -31,8 +31,8 @@ resource "scaleway_instance_server" "bungee" {
   user_data = {
     name        = "initscript"
     cloud-init = file("${path.module}/init_instance_bungee.sh")
-    "srvmine1-name" = "${scaleway_instance_server.srvmine1.name}"
-    "srvmine1-ip" = "${scaleway_instance_server.srvmine1.public_ip}"
+    "srvmine1-1name" = "${scaleway_instance_server.srvmine1.name}"
+    "srvmine1-2ip" = "${scaleway_instance_server.srvmine1.public_ip}"
   }
 
   depends_on = [ scaleway_instance_server.srvmine1 ]

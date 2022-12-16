@@ -58,7 +58,9 @@ n=$((n+1));
 done
 
 tmux new -d -s bungee_minecraft
-tmux send-keys -t bungee_minecraft "java -Xms1G -Xmx2G -jar BungeeCord.jar" ENTER
+tmux send-keys -t bungee_minecraft "java -Xms512M -Xmx1G -jar BungeeCord.jar" ENTER
+tmux new -d -s bungee_server_minecraft
+tmux send-keys -t bungee_server_minecraft "java -Xms1G -Xmx3G -jar spigot-1.14.jar" ENTER
 
 touch /root/initend
 
