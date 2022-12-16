@@ -24,6 +24,11 @@ ou (local)$ ./go srvmine1
 ou (local)$ ./go srvmine2
 (instance distante)# pstree
 (instance distante)# ls
+
+Se connecter aux sessions des serveurs minecraft :
+tmux list-sessions
+tmux attach-session -t "nom_de_la_session"
+Pour quitter la session tmux: CTRL+B, relacher et appuyer sur D
 ```
 ### Après un ls, si le fichier "initend" est présent, cela signifie que l'installation est terminée
 Si le fichier "initstart" n'est pas présent, l'installation n'a pas démarré ! <br>
