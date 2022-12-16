@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+touch /root/initstart
+
+cd /root/
 apt-get install -y default-jdk
 mkdir minecraft_server
 cd minecraft_server
@@ -26,3 +29,5 @@ sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 apt install tmux
 tmux new -d -s server_minecraft 
 tmux send-keys -t server_minecraft "java -Xms1G -Xmx1G -XX:+UseG1GC -jar spigot-1.14.jar nogui" ENTER
+
+touch /root/initend

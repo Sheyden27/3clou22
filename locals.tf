@@ -1,3 +1,3 @@
 locals {
-  team = "lenomdelateamtavu"
+  team = "teamnameobligatoire"
 }
