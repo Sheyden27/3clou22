@@ -24,7 +24,7 @@ Pour monitorer ce qui a été créé :
 ```
 ### Après un ls, si le fichier "initend" est présent, cela signifie que l'installation est terminée
 Si le fichier "initstart" n'est pas présent, l'installation n'a pas démarré ! Il y a surement un problème avec Scaleway dans ce cas, vérifier la création de l'instance sur la console cloud web Scaleway
-### Les fichiers concernant les serveurs déployés ce trouve dans le dossier /root/minecraft_bungee ou /root/minecraft_server selon le role de la machine
+### Les fichiers concernant les serveurs déployés se trouvent dans le dossier /root/minecraft_bungee ou /root/minecraft_server selon le role de la machine
 La configuration du bungee et des serveurs est automatique
 
 
