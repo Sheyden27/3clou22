@@ -47,12 +47,12 @@ do echo $line;
 if (($n % 2 != 0))
 then
 servname=`scw-userdata $line`
-echo "  $servname:"  >> minecraft_bungee/config.yml;
+echo "  $servname:"  >> /root/minecraft_bungee/config.yml;
 fi
 if (($n % 2 == 0))
 then
-echo "    address:" | tr "\n" " " >> minecraft_bungee/config.yml;
-scw-userdata $line >> minecraft_bungee/config.yml;
+echo "    address:" | tr "\n" " " >> /root/minecraft_bungee/config.yml;
+scw-userdata $line >> /root/minecraft_bungee/config.yml;
 fi
 n=$((n+1));
 done
