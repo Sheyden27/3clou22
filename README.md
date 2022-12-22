@@ -97,9 +97,7 @@ Pour changer de serveur, utilisez la commande suivante sur le tchat minecraft (o
 
 ## 1/ Description générale de l'achitecture déployée:
 
-Ce projet déploie un serveur Bungee qui gère trois serveurs Minecraft et qui permet de naviguer de l'un à l'autre via un client Minecraft. L'un des serveurs Minecraft sera hebergé en local sur le serveur Bungee.
-
-
+Ce projet déploie un serveur Bungee qui gère trois serveurs Minecraft et qui permet de naviguer de l'un à l'autre via un client Minecraft. L'un des serveurs Minecraft sera hebergé en local sur le serveur Bungee.<br>
 
 ## 2/ Liste de toutes les ressources définies dans les fichiers .tf:
 
