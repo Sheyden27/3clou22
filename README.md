@@ -41,6 +41,12 @@ Il y a surement un problème avec Scaleway dans ce cas, vérifier la création d
 
 Selon le role de la machine <br>
 La configuration du bungee et des serveurs est automatique
+
+### Pour fermer le déploiement cloud
+```
+(instance distante)# exit
+(local)$ make destroy
+```
 <br> <br> <br>
 
 # Comment se connecter pour commencer à jouer
