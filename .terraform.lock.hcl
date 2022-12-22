@@ -4,7 +4,7 @@
 provider "registry.terraform.io/scaleway/scaleway" {
   version = "2.8.0"
   hashes = [
-    "h1:xZtHIxE8EvMDftzccdneyeNIO2K2NrFl5CFut7x7R7U=",
+    "h1:Y3NvZmtPPeY7wJZPz/aKDpXvRE7WgROuOGZS6X3tDVI=",
     "zh:055c6b99f4fdff67c84016182c46b78225b538722100c02e922c5e346b88b891",
     "zh:234cdd56c1332c67d6d25b08875339b68d6ead500c2812f053ee12601a8c97c0",
     "zh:4f584e51f57fc5953065eb1a338c070395e2bb186712e270977deb510343bfdc",
