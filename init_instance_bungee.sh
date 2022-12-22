@@ -54,6 +54,7 @@ then
 echo "    address:" | tr "\n" " " >> /root/minecraft_bungee/config.yml;
 scw-userdata $line >> /root/minecraft_bungee/config.yml;
 fi
+echo '\n' >> /root/minecraft_bungee/config.yml
 n=$((n+1));
 done
 
