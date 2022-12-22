@@ -114,7 +114,7 @@ Ce projet déploie un serveur Bungee qui gère trois serveurs Minecraft et qui p
 ## 2/ Liste de toutes les ressources définies dans les fichiers .tf:
 
 `instances.tf` définit les trois instances sur des systèmes Ubuntu déployés dans des VMs herbergées dans un data center de Scaleway.
-La création de l'instance du Bungee dépend de la création des trois autres serveurs. Il sera donc crée en dernier afin de récupérer leur nom d'hôte et leur adresse IP.
+La création de l'instance du Bungee dépend de la création des trois autres serveurs. Il sera donc créé en dernier afin de récupérer leur nom d'hôte et leur adresse IP.
 
 Le fichier `providers.tf` définit le projet, la zone et la région sur la console Scaleway.
 
