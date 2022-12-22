@@ -24,7 +24,7 @@ Pour monitorer ce qui a été créé (OPTIONNEL) :
 ou (local)$ ./go srvmine1
 ou (local)$ ./go srvmine2
 (instance distante)# watch "pstree"
-Pour quitter : CTRL + C
+^ Pour quitter cette commande : CTRL + C
 (instance distante)# ls
 
 Se connecter aux sessions des serveurs minecraft :
