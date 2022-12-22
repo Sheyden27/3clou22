@@ -23,7 +23,8 @@ Pour monitorer ce qui a été créé (OPTIONNEL) :
 (local)$ ./go bungee-ip
 ou (local)$ ./go srvmine1
 ou (local)$ ./go srvmine2
-(instance distante)# pstree
+(instance distante)# watch "pstree"
+Pour quitter : CTRL + C
 (instance distante)# ls
 
 Se connecter aux sessions des serveurs minecraft :
