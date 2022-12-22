@@ -9,6 +9,7 @@ Tout d'abord cloner le repository ici présent 3clou22
 ```
 (local)$ git clone https://github.com/Sheyden27/3clou22
 (local)$ cd 3clou22
+(local)$ echo "LeNomDeVotreChoix" > teamname.txt
 (local)$ make init
 (local)$ make apply
 ```
