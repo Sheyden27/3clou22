@@ -112,11 +112,11 @@ Ce projet déploie un serveur Bungee qui gère trois serveurs Minecraft et qui p
 
 ## 2/ Liste de toutes les ressources définies dans les fichiers .tf:
 
-`instances.tf` défini les trois instances sur des systèmes Ubuntu déployés dans des VMs herbergées dans un data center de Scaleway.
+`instances.tf` définit les trois instances sur des systèmes Ubuntu déployés dans des VMs herbergées dans un data center de Scaleway.
 La création de l'instance du Bungee dépend de la création des trois autres serveurs. Il sera donc crée en dernier afin de récupérer leur nom d'hôte et leur adresse IP.
 
-Le fichier `providers.tf` défini le projet, la zone et la région sur la console Scaleway.
+Le fichier `providers.tf` définit le projet, la zone et la région sur la console Scaleway.
 
-Le fichier `security.tf` défini le groupe de sécurité auquel appartiennent les instances, ainsi que les règles d'entrée/sortie qui s'appliquent. Ici, nous ouvrons le port 22 pour la connexion en SSH, ainsi que les ports 25565 et 25577 pour les serveurs Minecraft et le Bungee.
+Le fichier `security.tf` définit le groupe de sécurité auquel appartiennent les instances, ainsi que les règles d'entrée/sortie qui s'appliquent. Ici, nous ouvrons le port 22 pour la connexion en SSH, ainsi que les ports 25565 et 25577 pour les serveurs Minecraft et le Bungee respectivement.
 
 Enfin, le fichier `locals.tf.tmpl` est un template qui permettra de générer le fichier locals.tf et qui définira le nom de l'équipe.
