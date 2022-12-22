@@ -94,3 +94,21 @@ Pour changer de serveur, utilisez la commande suivante sur le tchat minecraft (o
 - Appuyez ensuite sur entrer pour valider votre action, vous serez alors amené(e) sur l'autre serveur
 
 Bravo, vous avez une infrastructure complète qui vous permet de naviguer sur différentes machines avec chacune un serveur hébergé dessus directement via votre client Minecraft !
+
+
+## 1/ Description générale de l'achitecture déployée:
+
+Ce projet déploie un serveur Bungee qui gère trois serveurs Minecraft et qui permet de naviguer de l'un à l'autre via un client Minecraft. L'un des serveurs Minecraft sera hebergé en local sur le serveur Bungee.
+
+
+
+## 2/ Liste de toutes les ressources définies dans les fichiers .tf:
+
+`instances.tf` défini les trois instances sur des systèmes Ubuntu déployés dans des VMs herbergées dans un data center de Scaleway.
+La création de l'instance du Bungee dépend de la création des trois autres serveurs. Il sera donc crée en dernier afin de récupérer leur nom d'hôte et leur adresse IP.
+
+Le fichier `providers.tf` défini le projet, la zone et la région sur la console Scaleway.
+
+Le fichier `security.tf` défini le groupe de sécurité auquel appartiennent les instances, ainsi que les règles d'entrée/sortie qui s'appliquent. Ici, nous ouvrons le port 22 pour la connexion en SSH, ainsi que les ports 25565 et 25577 pour les serveurs Minecraft et le Bungee.
+
+Enfin, le fichier `locals.tf.tmpl` est un template qui permettra de générer le fichier locals.tf et qui définira le nom de l'équipe.
