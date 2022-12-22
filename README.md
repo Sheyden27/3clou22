@@ -46,6 +46,9 @@ La configuration du bungee et des serveurs est automatique
 ```
 (instance distante)# exit
 (local)$ make destroy
+(local)$ git reset --hard HEAD
+(local)$ git clean -f -d
+(local)$ git pull
 ```
 <br> <br> <br>
 
