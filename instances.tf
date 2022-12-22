@@ -41,7 +41,7 @@ resource "scaleway_instance_server" "bungee" {
     "srvmine2-4ip" = "${scaleway_instance_server.srvmine2.public_ip}"
   }
 
-  depends_on = [ scaleway_instance_server.srvmine1 ]
+  depends_on = [ scaleway_instance_server.srvmine1, scaleway_instance_server.srvmine2 ]
 
 
 }
