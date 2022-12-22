@@ -50,6 +50,7 @@ La configuration du bungee et des serveurs est automatique
 (local)$ git clean -f -d
 (local)$ git pull
 ```
+Après ces commandes, vous devez reprendre la documentation depuis le début, en ignorant les 2 premières commandes (clone et cd)
 <br> <br> <br>
 
 # Comment se connecter pour commencer à jouer
