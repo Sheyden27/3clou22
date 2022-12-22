@@ -93,7 +93,7 @@ Pour changer de serveur, utilisez la commande suivante sur le tchat minecraft (o
 - En tapant la commande "/server " vous pouvez naviguer entre les différents noms de serveurs disponible en appuyant sur la touche TAB (les deux flèches au dessus de VERR.MAJ, à gauche de la touche A sur un clavier AZERTY)
 - Appuyez ensuite sur entrer pour valider votre action, vous serez alors amené(e) sur l'autre serveur
 
-**Bravo, vous avez une infrastructure complète qui vous permet de naviguer sur différentes machines avec chacune un serveur hébergé dessus directement via votre client Minecraft !** <br>
+**Bravo, vous avez une infrastructure complète qui vous permet de naviguer sur différentes machines avec chacune un serveur hébergé dessus directement via votre client Minecraft !** <br> <br>
 
 ## 1/ Description générale de l'achitecture déployée:
 
